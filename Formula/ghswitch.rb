@@ -11,7 +11,7 @@ class Ghswitch < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/MadhuS-1605/ghswitch/releases/download/v0.2.3/ghswitch_darwin_amd64.tar.gz"
-      sha256 "baf8ec55a0cf75c95e2474c6a8375d981d82134dc2757103c6889eda6f830070"
+      sha256 "6281a7d601bb2e96368b2cc888a0e1fb56f6c1851ff9219c6ce829d73b416fe9"
 
       define_method(:install) do
         bin.install "ghswitch"
@@ -19,7 +19,7 @@ class Ghswitch < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/MadhuS-1605/ghswitch/releases/download/v0.2.3/ghswitch_darwin_arm64.tar.gz"
-      sha256 "920a06dd38dcf74ad852fb58c04beab9b6d836f3099a5844fcbe18c62ca8a98d"
+      sha256 "8b1a4efdaf9734304bb4fed9c34097c60d933f9b78c47e14276c1dd6c866892d"
 
       define_method(:install) do
         bin.install "ghswitch"
@@ -30,14 +30,14 @@ class Ghswitch < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/MadhuS-1605/ghswitch/releases/download/v0.2.3/ghswitch_linux_amd64.tar.gz"
-      sha256 "e6bb4ba22e61cbc0f551717a80fddb0c2ba66be90ee34d11f7ba5f57c438a4d2"
+      sha256 "311b74340a0e8f322686299cda9b0580acbbaebb1b4ba57d1c0a654c285bb141"
       define_method(:install) do
         bin.install "ghswitch"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/MadhuS-1605/ghswitch/releases/download/v0.2.3/ghswitch_linux_arm64.tar.gz"
-      sha256 "2448d3aacc555f17459fff909727bac4ee38a52e6a7ff9a4e761e7fda90ce46d"
+      sha256 "0a14d60ce3a4d41ed88a144163760468d94a4151538489e601d11058acdd70a9"
       define_method(:install) do
         bin.install "ghswitch"
       end
