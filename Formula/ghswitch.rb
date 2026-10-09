@@ -5,21 +5,21 @@
 class Ghswitch < Formula
   desc "GitHub-aware git toolkit — switch identities, manage branches, commit, sync, and open PRs"
   homepage "https://github.com/MadhuS-1605/ghswitch"
-  version "0.2.3"
+  version "0.2.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/MadhuS-1605/ghswitch/releases/download/v0.2.3/ghswitch_darwin_amd64.tar.gz"
-      sha256 "6281a7d601bb2e96368b2cc888a0e1fb56f6c1851ff9219c6ce829d73b416fe9"
+      url "https://github.com/MadhuS-1605/ghswitch/releases/download/v0.2.4/ghswitch_darwin_amd64.tar.gz"
+      sha256 "a71746d90c715395b78c66435dc79eff1db1c0f13c7bd67504b1d31fbceb7e9c"
 
       define_method(:install) do
         bin.install "ghswitch"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/MadhuS-1605/ghswitch/releases/download/v0.2.3/ghswitch_darwin_arm64.tar.gz"
-      sha256 "8b1a4efdaf9734304bb4fed9c34097c60d933f9b78c47e14276c1dd6c866892d"
+      url "https://github.com/MadhuS-1605/ghswitch/releases/download/v0.2.4/ghswitch_darwin_arm64.tar.gz"
+      sha256 "82635c20ec45cc5b74404a1fa80e616ecc1247612cf54e054cd0bc2f13b20ff2"
 
       define_method(:install) do
         bin.install "ghswitch"
@@ -29,15 +29,15 @@ class Ghswitch < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/MadhuS-1605/ghswitch/releases/download/v0.2.3/ghswitch_linux_amd64.tar.gz"
-      sha256 "311b74340a0e8f322686299cda9b0580acbbaebb1b4ba57d1c0a654c285bb141"
+      url "https://github.com/MadhuS-1605/ghswitch/releases/download/v0.2.4/ghswitch_linux_amd64.tar.gz"
+      sha256 "d11320254e280745876c529e963dc0ad4257ea81c7d747b39045aaf04b017642"
       define_method(:install) do
         bin.install "ghswitch"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/MadhuS-1605/ghswitch/releases/download/v0.2.3/ghswitch_linux_arm64.tar.gz"
-      sha256 "0a14d60ce3a4d41ed88a144163760468d94a4151538489e601d11058acdd70a9"
+      url "https://github.com/MadhuS-1605/ghswitch/releases/download/v0.2.4/ghswitch_linux_arm64.tar.gz"
+      sha256 "2d35a8f697d653ac44e29d116ae40e574e42f295e915f9173758df730007ab0a"
       define_method(:install) do
         bin.install "ghswitch"
       end
